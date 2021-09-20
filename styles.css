@@ -1,0 +1,119 @@
+body {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  background-color: #2a2424;
+}
+
+hr {
+  margin-top: 5px;
+  color: #fff;
+}
+
+
+.container {
+  margin-bottom: 10%;
+}
+
+.btn {
+  border-radius: 1.875rem;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.wie-btn {
+  background-color: #fed1ff;
+}
+
+.pes-btn {
+  background-color: #dcd6ff;
+}
+
+.cs-btn {
+  background-color: #9bb1ff;
+}
+
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 1rem;
+  color: black;
+  text-align: justify;
+  background-color: white;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    border-radius 0.15s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: white;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(Arrow.png);
+  transform: rotate(
+-180deg
+);
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: transparent;
+  outline: 0;
+  color: black;
+  box-shadow: none;
+}
+
+.accordion-header {
+  margin-bottom: 0;
+  background-color: transparent;
+  color: rgba(250, 243, 243, 0.856);
+}
+
+.accordion-item {
+  background-color: transparent;
+  color: rgba(250, 243, 243, 0.856);
+}
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+  .carousel-inner {
+    height: 225px;
+  }
+
+  .carousel-inner > .item > a > img,
+  .carousel-inner > .item > img {
+    max-height: 225px;
+    height: fit-content;
+  }
+}
+
+@media only screen   
+and (min-device-width : 992px){
+
+  .btn {
+    border-radius: 1.875rem;
+    margin-left: 44px;
+  }
+
+}
